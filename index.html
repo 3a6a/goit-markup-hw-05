@@ -31,7 +31,7 @@
             <a href="#" class="logo">Web<span>Studio</span></a>
             <div class="header__nav">
               <ul class="nav__list">
-                <li class="nav__link">
+                <li class="nav__link nav__link-studio">
                   <a href="#./index.html">Студия</a>
                 </li>
                 <li class="nav__link">
@@ -72,9 +72,9 @@
         <h1 class="main__section--title">
           Эффективные решения для вашего бизнеса
         </h1>
-        <a class="main__section--btn" href="#popup">
+        <button data-modal-open class="main__section--btn ">
           Заказать услугу
-        </a>
+        </button>
       </section>
 
       <!--  main__section -->
@@ -330,10 +330,10 @@
 
 <!-- popup -->
 
-<div class="popup" id="popup">
+<div data-modal class="popup  is-hidden" id="popup">
   <div class="popup__body">
     <div class="popup__content">
-      <a href="##" class="popup__close"><span class="close__btn"><img src="./img/popup/close-black-18dp (2) 1.png" alt=""></span></a>
+      <button data-modal-close class="popup__close "><class class="close__btn "><img src="./img/popup/close-black-18dp (2) 1.png" alt=""></class></button>
         <div class="popup__title"></div>
         <div class="popup__text">
           
@@ -343,5 +343,7 @@
   </div>
 </div>
 
+<!-- /popup -->
+<script src="./js/modal.js"></script>
   </body>
 </html>
